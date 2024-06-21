@@ -3,6 +3,8 @@ package com.kotlin.learnsqlite.model;
 public class Data {
     private String id, name, address;
 
+    public Data() {}
+
     public Data(String id, String name, String address) {
         this.id = id;
         this.name = name;

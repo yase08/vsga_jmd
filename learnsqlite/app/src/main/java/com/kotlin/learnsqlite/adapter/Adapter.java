@@ -42,23 +42,21 @@ public class Adapter extends BaseAdapter {
     public View getView(int i, View view, ViewGroup viewGroup) {
         if(inflater == null) {
             inflater = (LayoutInflater) activity.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-
-            if(view == null) {
-                view = inflater.inflate(R.layout.list_row, null);
-            }
-
-            TextView id = (TextView) view.findViewById(R.id.id);
-            TextView name = (TextView) view.findViewById(R.id.name);
-            TextView address = (TextView) view.findViewById(R.id.address);
-
-            Data data = items.get(i);
-
-            id.setText(data.getId());
-            name.setText(data.getName());
-            address.setText(data.getAddress());
-
-            return view;
         }
+
+        if(view == null) {
+            view = inflater.inflate(R.layout.list_row, null);
+        }
+
+        TextView id = (TextView) view.findViewById(R.id.id);
+        TextView name = (TextView) view.findViewById(R.id.name);
+        TextView address = (TextView) view.findViewById(R.id.address);
+
+        Data data = items.get(i);
+
+        id.setText(data.getId());
+        name.setText(data.getName());
+        address.setText(data.getAddress());
 
         return view;
     }

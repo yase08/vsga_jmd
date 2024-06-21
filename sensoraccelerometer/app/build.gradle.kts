@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.kotlin.learnsqlite"
+    namespace = "com.kotlin.sensoraccelerometer"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.kotlin.learnsqlite"
+        applicationId = "com.kotlin.sensoraccelerometer"
         minSdk = 28
         targetSdk = 34
         versionCode = 1

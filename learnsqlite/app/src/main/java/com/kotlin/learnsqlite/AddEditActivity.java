@@ -102,6 +102,8 @@ public class AddEditActivity extends AppCompatActivity {
         if (name.isEmpty() || address.isEmpty()) {
             Toast.makeText(this, "Please input name and address", Toast.LENGTH_SHORT).show();
         } else {
+            txt_name.setText(null);
+            txt_address.setText(null);
             SQLite.insert(name, address);
             blank();
             finish();
